@@ -1,0 +1,87 @@
+.btn_primary {
+    padding: 12px 48px;
+    border: 1px solid #fff;
+    background-color: #FFF;
+    color: #000;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 125%;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: transparent;
+    }
+}
+
+.hero {
+  padding-top: 165px;
+  padding-bottom: 123px;
+  background-color: #74c69d;
+
+  @include mobile() {
+    padding-bottom: 40px;
+  }
+}
+
+.hero__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 120px;
+
+  @include media() {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+}
+
+.hero_bg {
+    width: 645px;
+    height: 378px;
+    background-image: url(../images/hero_bg.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    
+    @include mobile() {
+        width: 335px;
+        height: 196px;
+    }
+}
+
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+}
+
+.hero__content h2 {
+    color: var(--Text_White, #FFF);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 125%;
+    letter-spacing: 5px;
+}
+
+.hero__content h3 {
+    max-width: 416px;
+    color: var(--Text_White, #FFF);
+    font-family: "Crimson Text";
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 125%; 
+    
+    @include mobile() {
+        font-size: 28px;
+    }
+}
+
+.hero__content p {
+    max-width: 416px;
+    padding-bottom: 10px;
+    color: var(--Color-White-75, rgba(255, 255, 255, 0.75));
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 125%;  
+}

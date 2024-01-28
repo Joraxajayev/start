@@ -1,0 +1,94 @@
+.footer {
+  padding: 50px 0;
+  background: #74C69D;  
+
+  @include media() {
+    padding: 31px 0;
+  }
+}
+
+.footer__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include media() {
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+  }
+}
+
+.footer__wrapper p {
+    color: var(--Color-White-100, #FFF);
+    text-align: right;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 125%;   
+}
+
+.footer__list {
+  display: flex;
+//   align-items: center;
+  gap: 20px;
+}
+
+.footer__list__item {
+}
+
+.footer__list__item .facebook {
+    display: block;
+    width: 26px;
+    height: 18px;  
+    background-image: url(../images/facebook_icn_1.svg);  
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.footer__list__item .instagram {
+    display: block;
+    width: 26px;
+    height: 18px;  
+    background-image: url(../images/instagram_icn_22.svg);  
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.footer__list__item .twit {
+    display: block;
+    width: 26px;
+    height: 18px;  
+    background-image: url(../images/twit_icn_3.svg);  
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.footer__list__item .pins {
+    display: block;
+    width: 26px;
+    height: 18px;  
+    background-image: url(../images/prin_icn_4.svg);  
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.footer__list__item .tiktok {
+    display: block;
+    width: 26px;
+    height: 18px;  
+    background-image: url(../images/tiktok_icn_5.svg);  
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.footer__list__item .whatsapp {
+    display: block;
+    width: 26px;
+    height: 18px;  
+    background-image: url(../images/whatsapp_icn_6.svg);  
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.footer__list__item .youtube {
+    display: block;
+    width: 26px;
+    height: 18px;  
+    background-image: url(../images/youtube_icn_7.svg);  
+    background-repeat: no-repeat;
+    background-size: contain;
+}
